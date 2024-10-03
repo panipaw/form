@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        fieldset {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        .div_form {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .div_form label {
+            width: 180px;
+            text-align: left; 
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Registrasi</h1>
+    <fieldset>
+        <legend>Biodata</legend>
+        <form action="">
+            <div class="div_form">
+                <label for="nama_mahasiswa">Nama Mahasiswa</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <input type="text" name="nama_mahasiswa" id="nama_mahasiswa" required placeholder="Nama Anda">
+                </div>
+            </div>
+            <div class="div_form">
+                <label for="nomor_induk_mahasiswa">No Induk Mahasiswa (NIM)</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <input type="text" name="nomor_induk_mahasiswa" id="nomor_induk_mahasiswa" required placeholder="123456789">
+                </div>
+            </div>
+            <div class="div_form">
+                <label for="alamat_mahasiswa">Alamat Mahasiswa</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <textarea name="alamat_mahasiswa" id="alamat_mahasiswa" cols="30" rows="5" placeholder="Alamat Anda"></textarea>
+                </div>
+            </div>
+            <div class="div_form">
+                <label>Tanggal Lahir</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <select name="tanggal" id="tanggal">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                    </select>
+                    <select name="bulan" id="bulan">
+                        <option value="januari">Januari</option>
+                        <option value="februari">Februari</option>
+                        <option value="maret">Maret</option>
+                    </select>
+                    <select name="tahun" id="tahun">
+                        <option value="1990">1990</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                    </select>
+                </div>
+            </div>
+            <div class="div_form">
+                <label>Jenis Kelamin</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <input type="radio" name="jenis_kelamin" value="pria" id="pria" checked><label for="pria">Pria</label>
+                    <input type="radio" name="jenis_kelamin" value="wanita" id="wanita"><label for="wanita">Wanita</label>
+                </div>
+            </div>
+            <div class="div_form">
+                <label for="upload_foto">Upload Foto</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <input type="file" id="upload_foto" required>
+                </div>
+            </div>
+            <div class="div_form">
+                <label for="url_website">URL Website</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <input type="text" name="url_website" id="url_website" required placeholder="URL Website Anda">
+                </div>
+            </div>
+            <div class="div_form">
+                <label for="perguruan_tinggi">Perguruan Tinggi</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <input type="text" name="perguruan_tinggi" id="perguruan_tinggi">
+                </div>
+            </div>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Info Akun</legend>
+        <form action="">
+            <div class="div_form">
+                <label for="email">Email</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <input type="email" name="email" id="email" required placeholder="Email Anda">
+                </div>
+            </div>
+            <div class="div_form">
+                <label for="username">Username</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <input type="text" name="username" id="username" required placeholder="Username Anda">
+                </div>
+            </div>
+            <div class="div_form">
+                <label for="password">Password</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <input type="password" name="password" id="password" required placeholder="Password Anda">
+                </div>
+            </div>
+            <div class="div_form">
+                <label for="ulangi_password">Ulangi Password</label>
+                <span class="colon">:</span>
+                <div class="div_input">
+                    <input type="password" name="ulangi_password" id="ulangi_password" required placeholder="Password Anda">
+                </div>
+            </div>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Kemampuan Dasar</legend>
+        <form action="">
+            <div class="div_form">
+                <div class="div_input">
+                    <input type="checkbox" name="html" id="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="css" id="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="javascript" id="javascript">
+                    <label for="javascript">JavaScript</label>
+                    <input type="checkbox" name="php" id="php">
+                    <label for="php">PHP</label>
+                    <input type="checkbox" name="mysql" id="mysql">
+                    <label for="mysql">MySQL</label>
+                    <input type="checkbox" name="laravel" id="laravel">
+                    <label for="laravel">Laravel</label>
+                    <input type="checkbox" name="react" id="react">
+                    <label for="react">React</label>
+                </div>
+            </div>
+        </form>
+    </fieldset>
+    <div class="div_form">
+        <div class="div_input">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Simpan">
+            <input type="button" value="Button" onclick="">
+        </div>
+    </div>
+</body>
+
+</html>
